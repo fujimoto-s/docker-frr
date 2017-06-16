@@ -12,5 +12,6 @@ RUN apt-get update && apt-get upgrade -y \
  && cd frr-2.0 \
  && ./configure && make && make install \
  && echo include /usr/local/lib >> /etc/ld.so.conf \
- && ldconfig
+ && ldconfig \
+ && mv /usr/local/etc/bgpd.conf.sample /usr/local/etc/bgpd.conf
 
