@@ -1,5 +1,5 @@
 # docker-frr
 ## Usage
-* docker run satoshifujimoto/docker-frr bgpd -u root -g root &
-* docker run satoshifujimoto/docker-frr telnet localhost bgpd
+* docker run --name frr --rm satoshifujimoto/docker-frr bgpd -u root -g root &
+* docker exec -it frr telnet localhost bgpd
 
